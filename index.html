@@ -71,7 +71,7 @@
         }
 
         .section-publications {
-            width: 70%;
+            width: 65%;
             padding-right: 20px;
         }
         .section-publications a {
@@ -79,7 +79,7 @@
         }
 
         .section-service {
-            width: 30%;
+            width: 35%;
             font-size: 14px;
         }
         .section-service a {
@@ -88,6 +88,116 @@
 
         .case-studies a {
             color: #0277BD;
+        }
+
+        .case-studies[name="service-oss"] .desc p {
+            padding-left: 14px;
+        }
+
+        .awards-work-section {
+            background: #fafafa;
+            border-top: 1px solid #e3e3e3;
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .section-awards {
+            width: 48%;
+            padding-right: 20px;
+        }
+        .section-awards a {
+            color: #0277BD;
+        }
+
+        .section-work {
+            width: 52%;
+        }
+        .section-work a {
+            color: #0277BD;
+        }
+
+        .cv-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .cv-list li {
+            margin-bottom: 0.55rem;
+        }
+
+        .awards-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .awards-list li {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            column-gap: 0.8rem;
+            align-items: start;
+        }
+
+        .award-year {
+            white-space: nowrap;
+            color: #5a5a5a;
+            font-weight: 700;
+        }
+
+        .work-item {
+            margin-bottom: 1rem;
+            padding-left: 0.7rem;
+            border-left: 3px solid #90CAF9;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+
+        .work-item h4 {
+            margin: 0 0 2px 0;
+        }
+
+        .work-role {
+            display: block;
+            color: #2f2f2f;
+            font-size: 0.95rem;
+        }
+
+        .work-logo {
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid #dfe3e8;
+        }
+
+        .work-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 4px;
+            background: #ffffff;
+        }
+
+        .work-logo img.logo-tight {
+            padding: 1px;
+        }
+
+        .work-logo-fallback {
+            display: none;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: #505050;
+        }
+
+        .work-meta {
+            display: block;
+            color: #5a5a5a;
+            font-size: 0.92rem;
+            margin-bottom: 0.2rem;
         }
 
         @media all and (max-width:980px) {
@@ -107,6 +217,15 @@
                 width: 100%;
                 font-size: 16px;
             }
+
+            .section-awards,
+            .section-work {
+                width: 100%;
+            }
+
+            .section-work {
+                margin-top: 1.5rem;
+            }
         }
 
     </style>
@@ -121,8 +240,9 @@
             <div class="sub-navigation">
                 <a href="#" class="main-navigation-link" id="about" data-scroll-goto="0">About</a>
                 <a href="#" class="main-navigation-link" id="activity-link" data-scroll-goto="1">Publications</a>
-                <a href="/blogs" class="main-navigation-link" id="activity-link">Blogs</a>
+                <a href="#work-experience-section" class="main-navigation-link" id="experience-link">Experience</a>
                 <a href="#" class="main-navigation-link" id="portofolio-link" data-scroll-goto="2">Projects</a>
+                <a href="/blogs" class="main-navigation-link" id="activity-link">Blogs</a>
             </div>
         </nav>
 
@@ -204,7 +324,10 @@
                         <b>🗞️ &nbsp;Recent News:</b>
                         <div style="max-height: 200px; overflow-y: auto;">
                             <table class="news-table" >
+                                <tr><td> 2025.12 </td><td> - </td> <td> Proposed my PhD thesis! </td>
+                                <tr><td> 2025.09 </td><td> - </td> <td> Organizing <a href="https://umass-systems.github.io/" target="_blank">UMass Systems Talk for Students</a> in Fall 2025</td>
                                 <tr><td> 2025.05 </td><td> - </td> <td> Joined Meta as PhD intern for the MySQL Raft team in Menlo Park, CA 🧑‍💻</td>
+                                <tr><td> 2025.05 </td><td> - </td> <td> Awarded travel grant for NSDI'25 in Philadelphia, PA ✈️ </td>
                                 <tr><td> 2024.08 </td><td> - </td> <td> Gave talk above my work on Declarative Replication at <a href="https://luma.com/x17bg5fh">SF Systems Meetup</a></td>
                                 <tr><td> 2024.05 </td><td> - </td> <td> Joined Google as PhD intern for the Bandwidth Enforcer team in Sunnyvale, CA 🧑‍💻</td>
                                 <tr><td> 2023.10 </td><td> - </td> <td> Awarded travel scholarship for SoCC'23 in Santa Cruz, CA ✈️ </td>
@@ -278,7 +401,7 @@
                                     <h4 style="margin-bottom: 0;">Garbage Collection Scheduling to Minimize Collision in SSD Array</h4>
                                     <small><b>F​adhil I. Kurnia</b></small>
                                     <br>
-                                    <small><i><b>Bachelor Thesis, 2019</b>, advisors: Dr. Achmad I. Kistijantoro, Riza S. Perdana</i></small>
+                                    <small><i><b>Undergraduate Thesis, Bandung Institute of Technology (ITB), 2019</b>, advisors: Achmad I. Kistijantoro, Riza S. Perdana</i></small>
                                     <br>
                                     <small>
                                         <a href="https://digilib.itb.ac.id/index.php/gdl/view/39580" target="blank">[ABS]</a>
@@ -316,13 +439,14 @@
 
                 </div>
                 <div class="section-service">
-                    <h1 style="color:#0277BD">💁 Service</h1>
+                    <h1 style="color:#0277BD">🧳 Services</h1>
                     <div class="desc">
                         <ul style="margin: 0; padding-left: 5%;">
+                            <li>Artifact Evaluation Committee in <a href="https://www.usenix.org/conference/nsdi26/call-for-artifacts" target="_blank">USENIX NSDI'26</a></li>
                             <li>Artifact Evaluation Committee in Usenix <a href="https://www.usenix.org/conference/atc25/call-for-artifacts" target="_blank">ATC'25</a> and <a href="https://www.usenix.org/conference/osdi25/call-for-artifacts" target="_blank">OSDI'25</a></li>
                             <li>Research Mentor in the UMass Summer URV program (2024)</li>
                             <li>Artifact Evaluation Committee in Usenix <a href="https://www.usenix.org/conference/atc24/call-for-artifacts" target="_blank">ATC'24</a> and <a href="https://www.usenix.org/conference/osdi24/call-for-artifacts" target="_blank">OSDI'24</a></li>
-                            <li>CS PhD Representative at UMass Amherst (term of 2023-2024)</li>
+                            <li>CS PhD Representative at UMass Amherst (term of 2023-2024 and 2024-2025)</li>
                             <li>Research Mentor in the UMass Summer URV program (2023)</li>
                             <li>Artifact Evaluation Committee in <a href="https://www.usenix.org/conference/atc23/call-for-artifacts" target="_blank">Usenix ATC'23</a></li>
                             <li>Artifact Evaluation Committee in <a href="https://www.usenix.org/conference/osdi23/call-for-artifacts" target="_blank">OSDI'23</a></li>
@@ -337,12 +461,92 @@
             </div>
         </section>
 
+        <section class="awards-work-section" style="padding-top: 18px; padding-bottom: 12px;">
+            <div class="hero">
+                <div class="section-work" id="work-experience-section">
+                    <h1 style="color:#0277BD; margin-bottom: 12px;">Work Experience</h1>
+
+                    <div class="work-item">
+                        <span class="work-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Meta_Platforms_logo.svg" alt="Meta logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                            <span class="work-logo-fallback">M</span>
+                        </span>
+                        <div>
+                            <h4>Meta, Core Infrastructure, Storage</h4>
+                            <span class="work-role">PhD Intern</span>
+                            <span class="work-meta">May-Aug 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <span class="work-logo">
+                            <img class="logo-tight" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                            <span class="work-logo-fallback">G</span>
+                        </span>
+                        <div>
+                            <h4>Google, Google Global Network (GGN)</h4>
+                            <span class="work-role">PhD Intern</span>
+                            <span class="work-meta">May-Aug 2024</span>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <span class="work-logo">
+                            <img src="https://www.google.com/s2/favicons?sz=128&domain=umass.edu" alt="UMass logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                            <span class="work-logo-fallback">U</span>
+                        </span>
+                        <div>
+                            <h4>University of Massachusetts Amherst, ANSR Lab</h4>
+                            <span class="work-role">Research Assistant</span>
+                            <span class="work-meta">Aug 2020 - Present</span>
+                        </div>
+                    </div>
+
+                    <div class="work-item">
+                        <span class="work-logo">
+                            <img src="https://www.google.com/s2/favicons?sz=128&domain=uchicago.edu" alt="UChicago logo" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                            <span class="work-logo-fallback">C</span>
+                        </span>
+                        <div>
+                            <h4>University of Chicago, UCARE Lab</h4>
+                            <span class="work-role">Student Researcher</span>
+                            <span class="work-meta">May 2018 - Dec 2019</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="section-awards" id="awards-section">
+                    <h1 style="color:#0277BD; margin-bottom: 12px;">Awards</h1>
+                    <ul class="cv-list awards-list">
+                        <li><span>Research Grant, Open Source Research Experience (OSRE), UC Santa Cruz.</span><span class="award-year">2025</span></li>
+                        <li><span>Student Grant, USENIX NSDI 2025, Philadelphia, PA.</span><span class="award-year">2025</span></li>
+                        <li><span>Travel Scholarship, ACM SoCC 2023, Santa Cruz, CA.</span><span class="award-year">2023</span></li>
+                        <li><span>Fellowship, EPFL Summer Research Institute (SuRI), Lausanne, Switzerland.</span><span class="award-year">2023</span></li>
+                        <li><span>Jim Gray Graduate Scholarship in Computer Science, CICS UMass Amherst.</span><span class="award-year">2021</span></li>
+                        <li><span>South East Asia Machine Learning School (SEAMLS) Travel Grant.</span><span class="award-year">2019</span></li>
+                        <li><span>Experience KAIST School of Computing Travel Grant, Daejeon, South Korea.</span><span class="award-year">2019</span></li>
+                        <li><span>Gold Medal, Indonesia Science Project Olympiad (ISPO), computer category.</span><span class="award-year">2014</span></li>
+                        <li><span>Gold Medal, Infomatrix International Project Competition, Bucharest, Romania.</span><span class="award-year">2013</span></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section data-scroll-index="2" style="padding-top: 5px;">
             <div class="case-studies" name="service-oss">
                 <div style="margin-top: 1em;">
                     <div class="">
                         <div class="desc">
-                            <h1 style="color:#0277BD;">🧑‍💻 Opensource Software</h2>
+                            <h1 style="color:#0277BD;">🧑‍💻 Open Source Software</h2>
+
+                            <p>
+                                ⚡ DistANN: Distributed Approximate Nearest Neighbor
+                                <br>
+                                <a class="github-button" href="https://github.com/fadhilkurnia/distann" data-show-count="true" aria-label="Star fadhilkurnia/distann on GitHub">Star</a>
+                                <a class="github-button" href="https://github.com/fadhilkurnia/distann/fork" data-show-count="true" aria-label="Fork fadhilkurnia/distann on GitHub">Fork</a>
+                            </p>
 
                             <p>
                                 🐿️ Go-Shamir: Scalable secret-sharing implementation for multicore architecture
@@ -364,7 +568,7 @@
         </section>
 
 
-        <section data-scroll-index="3" style="padding-top: 5px;">
+        <section data-scroll-index="3" style="padding-top: 5px; background: #eeeeee;">
             <div class="case-studies" name="portofolio">
                 <div class="header">
                     <h2 class="subtitle">Other Projects</h2>

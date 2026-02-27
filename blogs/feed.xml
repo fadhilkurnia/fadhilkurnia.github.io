@@ -4,7 +4,7 @@
   <id>https://fadhil.id/blog/blogs/</id>
   <title>Distributed Systems Blog</title>
   <subtitle>Blog to share research results on distributed systems area.</subtitle>
-  <updated>2023-09-11T16:37:40-04:00</updated>
+  <updated>2026-02-27T14:45:13-05:00</updated>
   <author>
     <name>Fadhil I. Kurnia</name>
     <uri>https://fadhil.id/blog/blogs/</uri>
@@ -13,7 +13,7 @@
   <link rel="alternate" type="text/html" hreflang="en"
     href="https://fadhil.id/blog/blogs/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 Fadhil I. Kurnia </rights>
+  <rights> © 2026 Fadhil I. Kurnia </rights>
   <icon>/blogs/assets/img/favicons/favicon.ico</icon>
   <logo>/blogs/assets/img/favicons/favicon-96x96.png</logo>
 
@@ -24,7 +24,7 @@
     <link href="https://fadhil.id/blog/blogs/posts/fast-paxos/" rel="alternate" type="text/html" title="Understanding Fast-Paxos" />
     <published>2023-06-25T09:00:00-04:00</published>
   
-    <updated>2023-06-26T18:07:17-04:00</updated>
+    <updated>2023-09-11T16:38:31-04:00</updated>
   
     <id>https://fadhil.id/blog/blogs/posts/fast-paxos/</id>
     <content src="https://fadhil.id/blog/blogs/posts/fast-paxos/" />
